@@ -1,2 +1,2 @@
-# micro-projects
-A bunch of micro projects.
+# Micro projects
+Repository contains a collection of small projects created to learn certain topics and concepts of building websites.
