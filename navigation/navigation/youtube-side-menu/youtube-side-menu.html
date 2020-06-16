@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <script src="https://kit.fontawesome.com/be7d9d633b.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="youtube-side-menu.css">
+    <title>YouTube Side Menu</title>
+</head>
+
+<body>
+
+    <header class="page-header">
+        <div class="page-header__left-side">
+            <button class="button page-header__hamburger">
+                <i class="icon fas fa-bars"></i>
+            </button>
+            <div class="logo">
+                <a class="link logo__link" href="#">
+                    <h3 class="logo__name">YouTube</h3><span class="logo__text">RU</span>
+                </a>
+            </div>
+        </div>
+        <form class="search-form" action="#">
+            <input class="search-form__input" type="text" name="main-search" placeholder="Search">
+            <button class="button search-form__submit-button" type="submit" name="submit-button"><i
+                    class="fas fa-search"></i></button>
+        </form>
+        <nav class="header-nav">
+            <div class="header-nav__menu">
+
+                <div class="header-nav__menu-container">
+                    <button class="button header-nav__button" href="#"><i class="icon fas fa-video"></i></button>
+                    <div class="context-menu context-menu_hidden context-menu_type_create">
+                        <div class="context-menu__link-group">
+                            <a class="link context-menu__link" href="#"><i class="icon far fa-play-circle"></i>Upload
+                                video</a>
+                            <a class="link context-menu__link" href="#"><i class="icon fas fa-podcast"></i>Go live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-nav__menu-container">
+                    <button class="button header-nav__button" href="#"><i class="icon fas fa-th"></i></button>
+                    <div class="context-menu context-menu_hidden context-menu_type_applications">
+                        <div class="context-menu__link-group">
+                            <a class="link context-menu__link" href="#"><i class="icon fab fa-youtube"></i>DanTube
+                                TV</a>
+                        </div>
+                        <div class="context-menu__link-group">
+                            <a class="link context-menu__link" href="#"><i class="icon fab fa-youtube"></i>DanTube
+                                Music</a>
+                            <a class="link context-menu__link" href="#"><i class="icon fab fa-youtube"></i>DanTube
+                                Kids</a>
+                        </div>
+                        <div class="context-menu__link-group">
+                            <a class="link context-menu__link" href="#"><i class="icon fab fa-youtube"></i>Creator
+                                Academy</a>
+                            <a class="link context-menu__link" href="#"><i class="icon fab fa-youtube"></i>DanTube for
+                                Artists</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-nav__menu-container">
+                    <button class="button header-nav__button" href="#"><i class="icon fas fa-bell"></i></button>
+                    <div class="context-menu context-menu_hidden context-menu_type_notifications">
+                        <div class="header context-menu__header">
+                            <h2 class="heading heading_weight_thin context-menu__heading">Notifications</h2>
+                            <button class="button"><i class="icon text_color_secondary fas fa-cog"></i></button>
+                        </div>
+                        <div class="context-menu__content">
+                            <i class="icon context-menu__icon fas fa-bell"></i>
+                            <h2 class="heading heading_weight_thin context-menu__heading">
+                                Your notifications live here
+                            </h2>
+                            <p class="context-menu__text">
+                                Subscribe to your favorite channels to get notified about their latest videos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-nav__menu-container">
+                    <button class="button button_type_profile header-nav__button" href="#">
+                        <div class="circle-icon circle-icon_color_blue">Д</div>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="side-menu  side-menu_minimized">
+        <a class="link side-menu__link" href="#">
+            <i class="icon side-menu__icon active icon_active fas fa-home"></i>
+            <p class="text text_size_small">Home</p>
+        </a>
+        <a class="link side-menu__link" href="#">
+            <i class="icon side-menu__icon  fas fa-fire"></i>
+            <p class="text text_size_small">Trending</p>
+        </a>
+        <a class="link side-menu__link" href="#">
+            <i class="icon side-menu__icon  fas fa-video"></i>
+            <p class="text text_size_small">Subscriptions</p>
+        </a>
+        <a class="link side-menu__link" href="#">
+            <i class="icon side-menu__icon  fas fa-book-reader"></i>
+            <p class="text text_size_small">Library</p>
+        </a>
+    </nav>
+
+    <nav hidden class="side-menu side-menu_maximized">
+        <div class="side-menu__link-group">
+            <a class="link active side-menu__link side-menu_direction_horizontal" href="#">
+                <i class="icon side-menu__icon active icon_padding_2 fas fa-home"></i>
+                <p class="text text_padding_1">Home</p>
+            </a>
+            <a class="link side-menu__link side-menu_direction_horizontal" href="#">
+                <i class="icon side-menu__icon icon_padding_2 fas fa-fire"></i>
+                <p class="text text_padding_1">Trending</p>
+            </a>
+            <a class="link side-menu__link side-menu_direction_horizontal" href="#">
+                <i class="icon side-menu__icon icon_padding_2 fas fa-video"></i>
+                <p class="text text_padding_1">Subscriptions</p>
+            </a>
+        </div>
+        <div class="side-menu__link-group">
+            <a class="link side-menu__link side-menu_direction_horizontal" href="#">
+                <i class="icon side-menu__icon side-menu__icon icon_padding_2 fas fa-book-reader"></i>
+                <p class="text text_padding_1">Library</p>
+            </a>
+            <a class="link side-menu__link side-menu_direction_horizontal" href="#">
+                <i class="icon side-menu__icon icon_padding_2 fas fa-book-reader"></i>
+                <p class="text text_padding_1">History</p>
+            </a>
+            <a class="link side-menu__link side-menu_direction_horizontal" href="#">
+                <i class="icon side-menu__icon icon_padding_2 fas fa-book-reader"></i>
+                <p class="text text_padding_1">Your videos</p>
+            </a>
+            <a class="link side-menu__link side-menu_direction_horizontal" href="#">
+                <i class="icon side-menu__icon icon_padding_2 fas fa-book-reader"></i>
+                <p class="text text_padding_1">Watch later</p>
+            </a>
+            <a class="link side-menu__link side-menu_direction_horizontal" href="#">
+                <i class="icon side-menu__icon icon_padding_2 fas fa-book-reader"></i>
+                <p class="text text_padding_1">Chill songs</p>
+            </a>
+            <a class="link side-menu__link side-menu_direction_horizontal" href="#">
+                <i class="icon side-menu__icon icon_padding_2 fas fa-book-reader"></i>
+                <p class="text text_padding_1">Show more</p>
+            </a>
+        </div>
+
+    </nav>
+
+    <section class="page-filler">
+        <h2>Some Heading</h2>
+        <h3>Some Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iure perferendis ratione, voluptates optio
+            maiores dolor! Nobis quisquam velit deserunt dolores veritatis, cum ullam recusandae eum, libero est enim
+            error? Praesentium veritatis deserunt libero unde, maiores nam, corporis aspernatur ut hic perspiciatis
+            distinctio sint itaque possimus vel magni? Enim illum laborum non vero, quo odit, accusamus amet similique
+            libero voluptas dolorem laudantium dicta magnam perspiciatis numquam. Nisi iste, eligendi veritatis dolore,
+            nostrum debitis recusandae non, minus explicabo quae omnis. Quo aliquid, dolorem molestiae adipisci
+            molestias facilis minus harum rerum rem ab sint quasi delectus eius. Praesentium dolores enim ipsa nesciunt.
+        </p>
+        <h3>Some Heading</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, doloribus. Id commodi, non quam aspernatur
+            nobis distinctio laboriosam necessitatibus minima impedit dolores a pariatur assumenda perferendis veritatis
+            porro illo dolor ea nemo nihil enim consectetur sequi soluta? Ad laboriosam esse voluptatum doloremque quo!
+            Laborum, tenetur aliquam! Sit excepturi fugit repellendus sed eos laboriosam dolores nulla totam harum,
+            architecto commodi amet doloribus eius quas perspiciatis cupiditate officiis, blanditiis corporis a sequi
+            maiores consequuntur eaque, atque quisquam? Quas minima ipsam, corrupti nostrum cum dicta adipisci, amet,
+            molestiae temporibus consectetur voluptatibus facilis. Magni perferendis omnis doloribus quam vitae odit
+            voluptate, facilis eius sit numquam soluta consequuntur excepturi illum quod aliquid perspiciatis repellat
+            deleniti cum sunt! Unde quas voluptatem, consequatur cumque autem laborum natus totam similique molestias.
+            Distinctio repellat dolorum sit tenetur nihil, quaerat quidem reprehenderit porro, tempore dicta doloremque
+            aut explicabo cum ipsam sint blanditiis voluptatem earum fugit ad veritatis suscipit ullam impedit.</p>
+        <h3>Some Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iure perferendis ratione, voluptates optio
+            maiores dolor! Nobis quisquam velit deserunt dolores veritatis, cum ullam recusandae eum, libero est enim
+            error? Praesentium veritatis deserunt libero unde, maiores nam, corporis aspernatur ut hic perspiciatis
+            distinctio sint itaque possimus vel magni? Enim illum laborum non vero, quo odit, accusamus amet similique
+            libero voluptas dolorem laudantium dicta magnam perspiciatis numquam. Nisi iste, eligendi veritatis dolore,
+            nostrum debitis recusandae non, minus explicabo quae omnis. Quo aliquid, dolorem molestiae adipisci
+            molestias facilis minus harum rerum rem ab sint quasi delectus eius. Praesentium dolores enim ipsa nesciunt.
+        </p>
+        <h3>Some Heading</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, doloribus. Id commodi, non quam aspernatur
+            nobis distinctio laboriosam necessitatibus minima impedit dolores a pariatur assumenda perferendis veritatis
+            porro illo dolor ea nemo nihil enim consectetur sequi soluta? Ad laboriosam esse voluptatum doloremque quo!
+            Laborum, tenetur aliquam! Sit excepturi fugit repellendus sed eos laboriosam dolores nulla totam harum,
+            architecto commodi amet doloribus eius quas perspiciatis cupiditate officiis, blanditiis corporis a sequi
+            maiores consequuntur eaque, atque quisquam? Quas minima ipsam, corrupti nostrum cum dicta adipisci, amet,
+            molestiae temporibus consectetur voluptatibus facilis. Magni perferendis omnis doloribus quam vitae odit
+            voluptate, facilis eius sit numquam soluta consequuntur excepturi illum quod aliquid perspiciatis repellat
+            deleniti cum sunt! Unde quas voluptatem, consequatur cumque autem laborum natus totam similique molestias.
+            Distinctio repellat dolorum sit tenetur nihil, quaerat quidem reprehenderit porro, tempore dicta doloremque
+            aut explicabo cum ipsam sint blanditiis voluptatem earum fugit ad veritatis suscipit ullam impedit.</p>
+        <h3>Some Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iure perferendis ratione, voluptates optio
+            maiores dolor! Nobis quisquam velit deserunt dolores veritatis, cum ullam recusandae eum, libero est enim
+            error? Praesentium veritatis deserunt libero unde, maiores nam, corporis aspernatur ut hic perspiciatis
+            distinctio sint itaque possimus vel magni? Enim illum laborum non vero, quo odit, accusamus amet similique
+            libero voluptas dolorem laudantium dicta magnam perspiciatis numquam. Nisi iste, eligendi veritatis dolore,
+            nostrum debitis recusandae non, minus explicabo quae omnis. Quo aliquid, dolorem molestiae adipisci
+            molestias facilis minus harum rerum rem ab sint quasi delectus eius. Praesentium dolores enim ipsa nesciunt.
+        </p>
+        <h3>Some Heading</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, doloribus. Id commodi, non quam aspernatur
+            nobis distinctio laboriosam necessitatibus minima impedit dolores a pariatur assumenda perferendis veritatis
+            porro illo dolor ea nemo nihil enim consectetur sequi soluta? Ad laboriosam esse voluptatum doloremque quo!
+            Laborum, tenetur aliquam! Sit excepturi fugit repellendus sed eos laboriosam dolores nulla totam harum,
+            architecto commodi amet doloribus eius quas perspiciatis cupiditate officiis, blanditiis corporis a sequi
+            maiores consequuntur eaque, atque quisquam? Quas minima ipsam, corrupti nostrum cum dicta adipisci, amet,
+            molestiae temporibus consectetur voluptatibus facilis. Magni perferendis omnis doloribus quam vitae odit
+            voluptate, facilis eius sit numquam soluta consequuntur excepturi illum quod aliquid perspiciatis repellat
+            deleniti cum sunt! Unde quas voluptatem, consequatur cumque autem laborum natus totam similique molestias.
+            Distinctio repellat dolorum sit tenetur nihil, quaerat quidem reprehenderit porro, tempore dicta doloremque
+            aut explicabo cum ipsam sint blanditiis voluptatem earum fugit ad veritatis suscipit ullam impedit.</p>
+    </section>
+    <script src="youtube-side-menu.js"></script>
+
+</body>
+
+</html>
